@@ -3,13 +3,14 @@ import { useState } from "react";
 const InputTodo = ({ fetchTodos }) => {
   const [description, setDescription] = useState("");
 
+   const backendURL = process.env.REACT_APP_BACKEND_URL
   // Add new todo
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!description.trim()) return; // Prevent empty todos
 
     try {
-      const response = await fetch("http://localhost:5000/todos", {
+      const response = await fetch(`${backendURL}/todos`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ description }),
