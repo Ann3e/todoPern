@@ -6,7 +6,7 @@ const todoRoutes=require("./routes/todoRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 //middleware
-app.use(cors({ origin: "http://localhost:5175" })); // Update this to your frontend port
+app.use(cors({ origin: "https://todo-pern-omega.vercel.app/" }));
 app.use(express.json());
 
 
