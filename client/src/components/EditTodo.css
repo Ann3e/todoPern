@@ -1,0 +1,41 @@
+.edit-todo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .edit-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .edit-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-btn, .save-btn, .cancel-btn {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .save-btn {
+    background: #28a745;
+  }
+  
+  .cancel-btn {
+    background: #dc3545;
+  }
+  
+  .edit-btn:hover, .save-btn:hover, .cancel-btn:hover {
+    opacity: 0.8;
+  }
+  

@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .username {
+    margin-right: 10px;
+  }
+  
+  .login-btn, .logout-btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
