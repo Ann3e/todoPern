@@ -82,10 +82,11 @@ import EditTodo from "./EditTodo";
 const ListTodo = () => {
   const [todos, setTodos] = useState([]);
 
+  const backendURL = process.env.REACT_APP_BACKEND_URL
   // Fetch Todos
   const fetchTodos = async () => {
     try {
-      const response = await fetch("http://localhost:5000/todos");
+      const response = await fetch(`${backendURL}/todos`);
   
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -102,7 +103,7 @@ const ListTodo = () => {
   // Delete a todo
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/todos/${id}`, {
+      const response = await fetch(`${backendURL}/todos/${id}`, {
         method: "DELETE",
       });
 
